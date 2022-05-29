@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OrderFragment">
+
+    <!--    <FrameLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:background="@color/white"-->
+    <!--        -->
+    <!--        />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/movieHourTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="2dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="@string/movieTime"-->
+    <!--        android:textColor="#BCD8D8D8"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintLeft_toLeftOf="@id/moviePosterImageView"-->
+    <!--        app:layout_constraintRight_toRightOf="@id/moviePosterImageView"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/movieTitleTextView" />-->
+
+    <TextView
+        android:id="@+id/chooseWatermel"
+        android:layout_width="438dp"
+        android:layout_height="379dp"
+
+        android:layout_margin="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="651dp"
+        android:gravity="center"
+        android:text="Выбери арбуз с нашей грядки"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/orderBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nespelyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:paddingTop="10dp"
+        android:text="неспелый"
+
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/orderBtn"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/spelyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="172dp"
+        android:paddingTop="10dp"
+        android:text="спелый"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/orderBtn"
+        app:layout_constraintRight_toLeftOf="@+id/nespelyi"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/not_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="172dp"
+
+        android:paddingTop="10dp"
+        android:text="уже сорван"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/orderBtn"
+        app:layout_constraintLeft_toRightOf="@+id/nespelyi" />
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="343dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="124dp"
+        android:gravity="center|center_vertical"
+        android:text="В корзину"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="451dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/arbuz3"
+        app:layout_constraintBottom_toTopOf="@+id/orderBtn"
+        app:layout_constraintTop_toBottomOf="@+id/chooseWatermel"
+        app:layout_constraintVertical_bias="0.008"
+        tools:layout_editor_absoluteX="96dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="следующий"
+        app:layout_constraintEnd_toEndOf="@+id/chooseWatermel"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

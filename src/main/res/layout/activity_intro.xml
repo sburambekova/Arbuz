@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7DCAC"
+    tools:context=".activity.IntroActivity">
+
+    <ImageView
+        android:id="@+id/arbuzImage"
+        android:layout_width="199dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="27dp"
+        android:src="@drawable/arbuz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/arbuzMarket"
+        android:layout_width="219dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="230dp"
+        android:fontFamily="monospace"
+        android:text="ArbuzMarket"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/arbuzImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/startBtn"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="100dp"
+        android:background="#FAFFFFFF"
+        android:clickable="true"
+        android:fontFamily="monospace"
+        android:paddingTop="5sp"
+        android:text="Начать"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arbuzImage"
+        app:layout_constraintVertical_bias="0.0"
+        tools:textStyle="bold" />
+</androidx.constraintlayout.widget.ConstraintLayout>

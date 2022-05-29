@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    tools:context=".activity.HomeFragment">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="397dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/textVIew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="406dp"
+            android:src="@drawable/arbuz2" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textVIew"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="133dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Заказывайте и Ощущите настоящий вкус лета!                                    Жми на заказ"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/bottomNavigationView"-->
+    <!--        android:layout_width="416dp"-->
+    <!--        android:layout_height="64dp"-->
+    <!--        android:backgroundTint="@color/white"-->
+    <!--        app:itemIconSize="30dp"-->
+
+
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:menu="@menu/navigation_menu">-->
+
+    <!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
